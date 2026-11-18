@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#010111">
+  <meta name="description" content="BlinkyBits — independent engineering consultancy specializing in embedded systems, low-power wireless technologies, BLE, UWB, and IoT.">
+  <title>BlinkyBits — Embedded Systems & Wireless Engineering</title>
+  <link rel="icon" href="./logo.png" type="image/png">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #010111;
+      --foreground: #f6f7fb;
+      --muted: #bcc3d4;
+      --accent: #56d4f5;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      background: var(--background);
+    }
+
+    body {
+      min-width: 280px;
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      background: var(--background);
+      color: var(--foreground);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      width: min(100% - 64px, 760px);
+      margin-inline: auto;
+      padding-block: 72px;
+    }
+
+    .content { width: 100%; }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .brand img {
+      display: block;
+      width: 72px;
+      height: 72px;
+      flex: 0 0 auto;
+      object-fit: contain;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 710;
+      letter-spacing: -0.045em;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .description {
+      max-width: 690px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.78;
+      letter-spacing: 0.002em;
+    }
+
+    .description p { margin: 0 0 18px; }
+    .description p:last-child { margin-bottom: 0; }
+
+    .contact { margin-top: 42px; }
+
+    .contact h2 {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 650;
+      color: var(--foreground);
+      margin: 0 0 12px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      font-size: 16px;
+      line-height: 1.6;
+      text-decoration: none;
+      text-underline-offset: 4px;
+    }
+
+    .contact a:hover, .contact a:focus-visible { text-decoration: underline; }
+    .contact a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+    @media (max-width: 600px) {
+      main { width: min(100% - 40px, 760px); padding-block: 64px; }
+      .brand { gap: 12px; margin-bottom: 28px; }
+      .brand img { width: 62px; height: 62px; }
+      .description { font-size: 16px; line-height: 1.72; }
+      .description p { margin-bottom: 16px; }
+      .contact { margin-top: 32px; }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      a { transition: color .15s ease; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="content">
+      <header class="brand">
+        <img src="./logo.png" alt="BlinkyBits logo" width="72" height="72">
+        <h1>BlinkyBits</h1>
+      </header>
+
+      <div class="description">
+        <p>BlinkyBits is an independent engineering consultancy specializing in embedded systems, low-power wireless technologies, and IoT solutions.</p>
+        <p>We design and develop reliable, energy-efficient connected devices, with expertise in firmware architecture, BLE, UWB, sensor integration, wearables, and medical applications. Our hands-on approach also extends to rapid prototyping, including 3D design and printing for custom enclosures and test fixtures.</p>
+      </div>
+
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <a href="mailto:irekguzik@gmail.com">irekguzik@gmail.com</a>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
